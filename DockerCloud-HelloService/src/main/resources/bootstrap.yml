@@ -1,0 +1,16 @@
+server:
+  port: 9005
+
+spring:
+  application:
+    name: DCHelloService
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    preferIpAddress: false
+
+ribbon:
+  eureka:
+    enabled: true
